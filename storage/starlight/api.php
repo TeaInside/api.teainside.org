@@ -33,7 +33,11 @@ if (isset($_GET["domain"], $_GET["sb_act"]) && is_string($_GET["domain"]) && is_
 
 			$nginx_conf = str_replace("{{target_ip}}", $target_ip, nginx_conf());
 			if (file_put_contents("/root/server/nginx/sites-available/@@.teainside.org/starlight.teainside.org", $nginx_conf)) {
-				shell_exec("/usr/sbin/service nginx restart");
+
+				$cmd = "sleep 3 && /usr/sbin/service nginx reload";
+
+				shell_exec("sh -c ".escapeshellarg($cmd)." >> /dev/null 2>&1 &");
+
 				print json_encode(
 					[
 						"status" => "ok",

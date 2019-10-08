@@ -26,7 +26,7 @@ class SimpleTeaProxDomainResolver:
 	def set_ip(self, target_ip):
 		target_ip = target_ip.split(".")
 		return requests.post(
-			'http://127.0.0.1:8000/internal.php',
+			'https://api.teainside.org/internal.php',
 			auth=TokenAuth(token),
 			params={
 				'action': 'nginx_prox',
@@ -39,7 +39,7 @@ class SimpleTeaProxDomainResolver:
 	# Get current domain IP.
 	def get_ip(self):
 		return requests.get(
-			'http://127.0.0.1:8000/internal.php',
+			'https://api.teainside.org/internal.php',
 			auth=TokenAuth(token),
 			params={
 				'action': 'nginx_prox',
@@ -55,7 +55,7 @@ domain = "starlight.teainside.org"
 st = SimpleTeaProxDomainResolver(token, domain)
 
 # Set domain IP to 123.123.123.123
-print(st.set_ip("33.1.3.1.3").text)
+print(st.set_ip("139.180.212.115").text)
 
 # # Get current domain IP
 # print(st.get_ip().text)
