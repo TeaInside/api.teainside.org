@@ -31,7 +31,7 @@ if (isset($_GET["domain"], $_GET["sb_act"]) && is_string($_GET["domain"]) && is_
 				JSON_PRETTY_PRINT
 			));
 
-			shell_exec("/usr/sbin/service nginx reload");
+			// shell_exec("/usr/sbin/service nginx reload");
 
 			print json_encode(
 				[
@@ -42,7 +42,7 @@ if (isset($_GET["domain"], $_GET["sb_act"]) && is_string($_GET["domain"]) && is_
 			exit;
 		}
 	} else if ($_GET["sb_act"] === "get" && ($_SERVER["REQUEST_METHOD"] === "GET")) {
-
+		print(file_get_contents(__DIR__."/prox_target.json"));
 		exit;
 	} else {
 		$subErrMsg = "Invalid sb_act.";
