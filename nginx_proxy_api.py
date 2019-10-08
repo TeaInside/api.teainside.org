@@ -55,7 +55,7 @@ domain = "starlight.teainside.org"
 st = SimpleTeaProxDomainResolver(token, domain)
 
 # Set domain IP to 123.123.123.123
-# print(st.set_ip("123.123.123.123").text)
+print(st.set_ip("33.1.3.1.3").text)
 
 # # Get current domain IP
 # print(st.get_ip().text)
