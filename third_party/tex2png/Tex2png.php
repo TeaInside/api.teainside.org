@@ -193,6 +193,8 @@ class Tex2png
 
         shell_exec($command);
 
+        var_dump($cmd);
+
         if (!file_exists($this->tmpDir . '/' . $this->hash . '.dvi')) {
             throw new \Exception('Unable to compile LaTeX formula (is latex installed? check syntax)');
         }
@@ -216,7 +218,7 @@ class Tex2png
      */
     public function clean()
     {
-        @shell_exec('rm -f ' . $this->tmpDir . '/' . $this->hash . '.* 2>&1');
+        // @shell_exec('rm -f ' . $this->tmpDir . '/' . $this->hash . '.* 2>&1');
     }
 
     /**
