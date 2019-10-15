@@ -7,8 +7,8 @@ use Gregwar\Tex2png\Tex2png;
 if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 	header("Content-Type: application/json");
 	$hash = sha1($_GET["exp"]);
-	Tex2png::create($_GET["exp"])
-	    ->saveTo(__DIR__."/latex/{$hash}.png", "600x600")
+	Tex2png::create($_GET["exp"], "600x600")
+	    ->saveTo(__DIR__."/latex/{$hash}.png")
 	    ->generate();
 
 	print json_encode(
