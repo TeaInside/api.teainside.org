@@ -164,6 +164,7 @@ class Tex2png
             $tex .= '\usepackage{' . $package . "}\n";
         }
         
+        $tex .= '\begin{changemargin}{1cm}{1cm}'."\n";
         $tex .= '\begin{document}'."\n";
         $tex .= '\pagestyle{empty}'."\n";
         $tex .= '\begin{displaymath}'."\n";
@@ -172,6 +173,7 @@ class Tex2png
         
         $tex .= '\end{displaymath}'."\n";
         $tex .= '\end{document}'."\n";
+        $tex .= '\end{changemargin}'."\n";
 
         if (file_put_contents($tmpfile, $tex) === false) {
             throw new \Exception('Failed to open target file');
