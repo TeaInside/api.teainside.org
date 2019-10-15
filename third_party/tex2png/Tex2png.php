@@ -163,17 +163,21 @@ class Tex2png
         foreach ($this->packages as $package) {
             $tex .= '\usepackage{' . $package . "}\n";
         }
-        
-        $tex .= '\begin{changemargin}{1cm}{1cm}'."\n";
+
+        $tex .= 
+'\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist';
+
         $tex .= '\begin{document}'."\n";
         $tex .= '\pagestyle{empty}'."\n";
         $tex .= '\begin{displaymath}'."\n";
-        
+
+        $tex .= '\begin{changemargin}{1cm}{1cm}'."\n";        
         $tex .= $this->formula."\n";
+        $tex .= '\end{changemargin}'."\n";
         
         $tex .= '\end{displaymath}'."\n";
         $tex .= '\end{document}'."\n";
-        $tex .= '\end{changemargin}'."\n";
 
         if (file_put_contents($tmpfile, $tex) === false) {
             throw new \Exception('Failed to open target file');
