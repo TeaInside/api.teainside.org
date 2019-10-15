@@ -8,7 +8,7 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 	header("Content-Type: application/json");
 	$hash = sha1($_GET["exp"]);
 	Tex2png::create($_GET["exp"])
-	    ->saveTo(__DIR__."/latex/{$hash}.png")
+	    ->saveTo(__DIR__."/latex/{$hash}.png", "600x600")
 	    ->generate();
 
 	print json_encode(
