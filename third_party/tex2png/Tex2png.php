@@ -193,7 +193,7 @@ class Tex2png
 
         shell_exec($command);
 
-        var_dump($cmd);
+        var_dump($command);
 
         if (!file_exists($this->tmpDir . '/' . $this->hash . '.dvi')) {
             throw new \Exception('Unable to compile LaTeX formula (is latex installed? check syntax)');
