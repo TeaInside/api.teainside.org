@@ -11,11 +11,19 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 	$st->saveTo(__DIR__."/latex/{$hash}.png")
 	    ->generate();
 
-	print json_encode(
-		[
-			"ret" => "https://api.teainside.org/latex/{$hash}.png"
-		]
-	);
+	if ($st->error) {
+		print json_encode(
+			[
+				"error" => $st->error
+			]
+		)
+	} else {
+		print json_encode(
+			[
+				"ret" => "https://api.teainside.org/latex/{$hash}.png"
+			]
+		);
+	}
 	exit;
 }
 
