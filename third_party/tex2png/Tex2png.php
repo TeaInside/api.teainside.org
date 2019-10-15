@@ -163,18 +163,12 @@ class Tex2png
         foreach ($this->packages as $package) {
             $tex .= '\usepackage{' . $package . "}\n";
         }
-
-        $tex .= 
-'\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist';
-
+        
         $tex .= '\begin{document}'."\n";
         $tex .= '\pagestyle{empty}'."\n";
         $tex .= '\begin{displaymath}'."\n";
-
-        $tex .= '\begin{changemargin}{1cm}{1cm}'."\n";        
+        
         $tex .= $this->formula."\n";
-        $tex .= '\end{changemargin}'."\n";
         
         $tex .= '\end{displaymath}'."\n";
         $tex .= '\end{document}'."\n";
@@ -192,8 +186,6 @@ class Tex2png
         $command = 'cd ' . $this->tmpDir . '; ' . static::LATEX . ' ' . $this->hash . '.tex < /dev/null |grep ^!|grep -v Emergency > ' . $this->tmpDir . '/' .$this->hash . '.err 2> /dev/null 2>&1';
 
         shell_exec($command);
-
-        var_dump($command);
 
         if (!file_exists($this->tmpDir . '/' . $this->hash . '.dvi')) {
             throw new \Exception('Unable to compile LaTeX formula (is latex installed? check syntax)');
@@ -218,7 +210,7 @@ class Tex2png
      */
     public function clean()
     {
-        // @shell_exec('rm -f ' . $this->tmpDir . '/' . $this->hash . '.* 2>&1');
+        @shell_exec('rm -f ' . $this->tmpDir . '/' . $this->hash . '.* 2>&1');
     }
 
     /**
