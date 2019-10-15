@@ -50,13 +50,12 @@ class SimpleTeaProxDomainResolver:
 
 
 
-token = "EcppB0QIiAaJ/fy6nQxhIvFPbAquTZ162mCbCLL3ooJ0THiQ+/T1xPYLsTLnRBVJfwAvDCVh9C2+"
-domain = "starlight.teainside.org"
+token = "... your token here ..."
+domain = "... your domain here ..."
 st = SimpleTeaProxDomainResolver(token, domain)
 
 # Set domain IP to 123.123.123.123
-# 
-print(st.set_ip("139.180.212.115").text)
+print(st.set_ip("123.123.123.123").text)
 
 # # Get current domain IP
 # print(st.get_ip().text)
