@@ -16,7 +16,7 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 			[
 				"error" => $st->error
 			]
-		)
+		);
 	} else {
 		print json_encode(
 			[
