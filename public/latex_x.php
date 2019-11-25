@@ -6,15 +6,31 @@ use Gregwar\Tex2png\Tex2png;
 
 
 if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
-	if (strpos($_GET["exp"], "\\int") !== false) {
-		$_GET["exp"] = str_replace("\\int ", "\\int\\(pure_space)", $_GET["exp"]);
-		$_GET["exp"] = implode("\\;d", explode("d", $_GET["exp"]));
-	}
-	$_GET["exp"] = str_replace(" ", "\\,", trim($_GET["exp"]));
-	$_GET["exp"] = str_replace("\\(pure_space)", " ", $_GET["exp"]);
 
-	$hash = sha1($_GET["exp"]);
-	$st = new Tex2png($_GET["exp"]);
+	$expr = $_GET["exp"];
+
+	if (strpos($expr, "\\int") !== false) {
+		$expr = str_replace("\\int ", "\\int\\(pure_space)", $expr);
+		$expr = implode("\\;d", explode("d", $expr));
+	}
+
+	$expr = str_replace(" ", "\\,", trim($expr));
+	$expr = str_replace(
+		[
+			"\\(pure_space)",
+			"π",
+			"\\erf"
+		],
+		[
+			" ",
+			"\\pi",
+			"erf"
+		],
+		$expr
+	);
+
+	$hash = sha1($expr);
+	$st = new Tex2png($expr);
 	if (file_exists(__DIR__."/latex/{$hash}.png")) {
 		$st->error = null;
 	} else {
@@ -23,7 +39,7 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 
 	if ($st->error) {
 		header("Content-Type: application/json");
-		print json_encode(["error" => $st->error->__toString()], JSON_UNESCAPED_SLASHES);
+		echo json_encode(["error" => $st->error->__toString()], JSON_UNESCAPED_SLASHES);
 	} else {
 		header("Content-Type: image/png");
 		readfile(__DIR__."/latex/{$hash}.png");
