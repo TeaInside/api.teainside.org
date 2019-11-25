@@ -30,7 +30,8 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 	);
 
 	$hash = sha1($expr);
-	$st = new Tex2png($expr);
+	$d = isset($_GET["d"]) ? (int)$_GET["d"] : 155;
+	$st = new Tex2png($expr, $d);
 	if (file_exists(__DIR__."/latex/{$hash}.png")) {
 		$st->error = null;
 	} else {
