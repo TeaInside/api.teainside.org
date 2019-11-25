@@ -11,7 +11,7 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 
 	if (strpos($expr, "\\int") !== false) {
 		$expr = str_replace("\\int ", "\\int\\(pure_space)", $expr);
-		$expr = implode("\\;d", preg_split("/(?<=[^\\\\][^c])d/", $a));
+		$expr = implode("\\;d", preg_split("/(?<=[^\\\\][^c])d/", $expr));
 	}
 
 	$expr = str_replace(" ", "\\,", trim($expr));
