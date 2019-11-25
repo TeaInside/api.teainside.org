@@ -24,7 +24,7 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 		[
 			" ",
 			"\\pi",
-			"erf"
+			"\,erf"
 		],
 		$expr
 	);
