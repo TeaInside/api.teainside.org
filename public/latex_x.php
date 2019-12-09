@@ -8,6 +8,7 @@ use Gregwar\Tex2png\Tex2png;
 if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 
 	$expr = $_GET["exp"];
+    $border = $_GET["border"] ?? 0;
 
 	if (strpos($expr, "\\int") !== false) {
 		$expr = str_replace("\\int ", "\\int\\(pure_space)", $expr);
@@ -29,13 +30,17 @@ if (isset($_GET["exp"]) && is_string($_GET["exp"])) {
 		$expr
 	);
 
+	$hash = sha1($expr.$border);
 	$d = isset($_GET["d"]) ? (int)$_GET["d"] : 155;
-	$hash = sha1($expr.$d);
 	$st = new Tex2png($expr, $d);
 	if (file_exists(__DIR__."/latex/{$hash}.png")) {
 		$st->error = null;
 	} else {
-		$st->saveTo(__DIR__."/latex/{$hash}.png")->generate();
+		$st->saveTo($file = __DIR__."/latex/{$hash}.png")->generate();
+        $file = escapeshellarg($file);
+        if ($border) {
+            shell_exec("/usr/bin/convert {$file} -fuzz 10% -trim +repage -bordercolor white -border {$border} {$file}");
+        }
 	}
 
 	if ($st->error) {
