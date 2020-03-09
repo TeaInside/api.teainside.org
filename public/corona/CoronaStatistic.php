@@ -19,7 +19,7 @@ class CoronaStatistic
     /**
      * @var string
      */
-    private $o;
+    private $o = "";
 
     /**
      * Constructor.
@@ -32,6 +32,9 @@ class CoronaStatistic
                 file_get_contents(CORONA_STATS_STORAGE."/global.json"),
                 true
             );
+        }
+        if (file_exists(CORONA_STATS_STORAGE."/last_scrape.html")) {
+            $this->o = file_get_contents(CORONA_STATS_STORAGE."/last_scrape.html");
         }
     }
 
@@ -121,6 +124,10 @@ class CoronaStatistic
      */
     public function getCountry(string $countryName): array
     {
+        if ($this->o === "") {
+            $this->scrape();
+        }
+
         $tm = 0;
         $cmt = $fst = $sdt = 0;
         $c = explode("<tr style=\"\"> <td style=\"font-weight: bold; font-size:15px; text-align:left; padding-left:3px;\"> {$countryName} </td>", $this->o, 2);
