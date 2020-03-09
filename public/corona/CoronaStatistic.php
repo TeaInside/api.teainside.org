@@ -35,7 +35,17 @@ class CoronaStatistic
     public function scrape(): bool
     {
         $err = false;
-        $o = file_get_contents(__DIR__."/dummy.html");
+        // $o = file_get_contents(__DIR__."/dummy.html");
+
+        $ch = curl_init("https://www.worldometers.info/coronavirus/");
+        curl_setopt_array($ch,
+            [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_SSL_VERIFYPEER => false,
+                CURLOPT_SSL_VERIFYHOST => false
+            ]
+        );
+        $o = curl_exec($ch);
 
         $cmt = $fst = $sdt = 0;
 
@@ -82,10 +92,10 @@ class CoronaStatistic
                         "scraped_at" => $tm
                     ]
                 ));
+            file_put_contents(CORONA_STATS_STORAGE."/last_scrape.html", $o);
         }
 
         file_put_contents(CORONA_STATS_STORAGE."/last_scrape.txt", $tm);
-        file_put_contents(CORONA_STATS_STORAGE."/last_scrape.html", $o);
         $this->o = $o;
 
         return $err;
