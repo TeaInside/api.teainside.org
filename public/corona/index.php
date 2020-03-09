@@ -15,7 +15,7 @@ if (isset($_GET["country"])) {
     }
 } else {
     $data = $st->getGlobal();
-    if (abs($now - $data["scraped_at"]) > 3600) {
+    if (isset($data["scraped_at"]) && (abs($now - $data["scraped_at"]) > 3600)) {
         $st->scrape();
         $data = $st->getGlobal();
     }

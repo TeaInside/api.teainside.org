@@ -27,6 +27,12 @@ class CoronaStatistic
     public function __construct()
     {
         is_dir(CORONA_STATS_STORAGE) or mkdir(CORONA_STATS_STORAGE);
+        if (file_exists(CORONA_STATS_STORAGE."/global.json")) {
+            $this->globalData = json_decode(
+                file_get_contents(CORONA_STATS_STORAGE."/global.json"),
+                true
+            );
+        }
     }
 
     /**
@@ -134,7 +140,7 @@ class CoronaStatistic
             "cmt" => $cmt,
             "fst" => $fst,
             "sdt" => $sdt,
-            "scraped_at" => $tm
+            "scraped_at" => $this->globalData["scraped_at"]
         ];
     }
 }
