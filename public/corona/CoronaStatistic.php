@@ -130,15 +130,25 @@ class CoronaStatistic
 
         $tm = 0;
         $cmt = $fst = $sdt = 0;
-        $c = explode("<tr style=\"\"> <td style=\"font-weight: bold; font-size:15px; text-align:left; padding-left:3px;\"> {$countryName} </td>", $this->o, 2);
+        // $c = explode("<tr style=\"\"> <td style=\"font-weight: bold; font-size:15px; text-align:left; padding-left:3px;\"> {$countryName} </td>", $this->o, 2);
+
+        $countryName = preg_quote(strtolower($countryName));
+        $c = explode("<table id=\"main_table_countries\" ", $this->o, 2);
         if (isset($c[1])) {
-            $c = explode("</tr>", $c[1], 2);
-            if (preg_match_all("/<td[^\<\>]+?>(.+?)<\/td>/", $c[0], $m)) {
-                $m = $m[1];
-                $cmt = (int)str_replace(",", "", $m[0]);
-                $fst = (int)str_replace(",", "", $m[3]);
-                $sdt = (int)str_replace(",", "", $m[5]);
-                $tm = strtotime(gmdate("Y-m-d H:i:s"));
+            $c = explode("</table>", $c[1], 2);
+            $c = explode("<tr style=\"\">", $c[0]);
+            foreach ($c as $k => $v) {
+                $v = strtolower($v);
+                if (preg_match("/\W{$countryName}\W/", $v)) {
+                    if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
+                        $m = $m[1];
+                        $cmt = (int)str_replace(",", "", $m[1]);
+                        $fst = (int)str_replace(",", "", $m[4]);
+                        $sdt = (int)str_replace(",", "", $m[6]);
+                        $tm = strtotime(gmdate("Y-m-d H:i:s"));
+                        break;
+                    }
+                }
             }
         }
 
