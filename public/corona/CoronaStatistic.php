@@ -190,11 +190,9 @@ class CoronaStatistic
                     ];
                 }
             }
-            $data["scraped_at"] = strtotime(
-                isset($this->globalData["scraped_at"]) ?
-                $this->globalData["scraped_at"]:
-                gmdate("Y-m-d H:i:s")
-            );
+            $data["scraped_at"] = isset($this->globalData["scraped_at"]) ?
+                $this->globalData["scraped_at"] :
+                strtotime(gmdate("Y-m-d H:i:s"));
         }
 
         return $data;
