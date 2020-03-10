@@ -172,7 +172,12 @@ class CoronaStatistic
         }
         // $c = explode("<tr style=\"\"> <td style=\"font-weight: bold; font-size:15px; text-align:left; padding-left:3px;\"> {$countryName} </td>", $this->o, 2);
 
-        $data = [];
+        $data = [
+            "scraped_at" => isset($this->globalData["scraped_at"]) ?
+                $this->globalData["scraped_at"] :
+                strtotime(gmdate("Y-m-d H:i:s")),
+            "data" => []
+        ];
 
         $countryName = preg_quote(strtolower($countryName));
         $c = explode("<table id=\"main_table_countries\" ", $this->o, 2);
@@ -182,7 +187,7 @@ class CoronaStatistic
             foreach ($c as $k => $v) {
                 if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
                     $m = $m[1];
-                    $data[] = [
+                    $data["data"][] = [
                         "country" => trim(strip_tags($m[0])),
                         "cmt" => (int)str_replace(",", "", $m[1]),
                         "fst" => (int)str_replace(",", "", $m[4]),
@@ -190,9 +195,6 @@ class CoronaStatistic
                     ];
                 }
             }
-            $data["scraped_at"] = isset($this->globalData["scraped_at"]) ?
-                $this->globalData["scraped_at"] :
-                strtotime(gmdate("Y-m-d H:i:s"));
         }
 
         return $data;
