@@ -34,7 +34,7 @@ while (true) {
 
         $text = "[Coronavirus Update (for Indonesia)]\n";
         foreach ($data as $k => $v) {
-            $text .= "{$k}. ({$v["date"]}) New {$v["amount"]} {$v["type"]} {$v["source"]}\n\n";
+            $text .= "{$k}. ({$v["date"]}) {$v["amount"]} new {$v["type"]} {$v["source"]}\n\n";
         }
 
         foreach ($listChatId as $v) {
