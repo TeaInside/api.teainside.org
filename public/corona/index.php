@@ -7,9 +7,10 @@ require __DIR__."/CoronaStatistic.php";
 $st = new CoronaStatistic;
 $now = strtotime(gmdate("Y-m-d H:i:s"));
 
-var_dump($st->getNewCases("Indonesia"));
-
+$data = $st->getNewCases("Indonesia");
+print_r($data);
 die;
+
 if (isset($_GET["all"])) {
     $data = $st->getAllCountry();
     if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 3600)) {
