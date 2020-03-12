@@ -199,4 +199,65 @@ class CoronaStatistic
 
         return $data;
     }
+
+    /**
+     * @param string $country
+     * @return array
+     */
+    public function getNewCases(string $country): array
+    {
+        $country = preg_quote($country);
+        $data = [];
+
+        if (preg_match_all(
+            "/<h4>(\w+)\s(\d+)(?:\s\(GMT\))?:(?:<br>)?<\/h4>.*<ul>(.+)window\.adsbygoogle/Usi",
+            $this->o,
+            $mm
+        )) {
+            foreach ($mm[3] as $kk => $vv) {
+                if (preg_match_all(
+                    "/(\d)\snew\s(\w+)\sin\s{$country}.+<a href=\"(.+)\".+>source<\/a>/USi",
+                    $vv,
+                    $m
+                )) {
+                    
+                    foreach ($m[1] as $k => $v) {
+                        $r = [
+                            "date" => $mm[1][$kk]." ".$mm[2][$kk],
+                            "type" => trim($m[2][$k]),
+                            "amount" => (int)$v,
+                            "source" => html_entity_decode($m[3][$k], ENT_QUOTES, "UTF-8"),
+                        ];
+                        $data[$r["source"]] = $r;
+                    }
+                }        
+            }
+        }
+
+        if (preg_match_all(
+            "/<h4>(\w+)\s(\d+)(?:\s\(GMT\))?:(?:<br>)?<\/h4>.*<ul>(.+)<\/ul>/Usi",
+            $this->o,
+            $mm
+        )) {
+            foreach ($mm[3] as $kk => $vv) {
+                if (preg_match_all(
+                    "/(\d)\snew\s(\w+)\sin\s{$country}.+<a href=\"(.+)\".+>source<\/a>/USi",
+                    $vv,
+                    $m
+                )) {
+                    foreach ($m[1] as $k => $v) {
+                        $r = [
+                            "date" => $mm[1][$kk]." ".$mm[2][$kk],
+                            "type" => trim($m[2][$k]),
+                            "amount" => (int)$v,
+                            "source" => html_entity_decode($m[3][$k], ENT_QUOTES, "UTF-8")
+                        ];
+                        $data[$r["source"]] = $r;
+                    }
+                }
+            }
+        }
+
+        return array_values($data);
+    }
 }
