@@ -9,20 +9,20 @@ $now = strtotime(gmdate("Y-m-d H:i:s"));
 
 if (isset($_GET["all"])) {
     $data = $st->getAllCountry();
-    if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 3600)) {
+    if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 500)) {
         $st->scrape();
         $data = $st->getAllCountry();
     }
 } else {
     if (isset($_GET["country"]) && is_string($_GET["country"])) {
         $data = $st->getCountry($_GET["country"]);
-        if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 3600)) {
+        if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 500)) {
             $st->scrape();
             $data = $st->getCountry($_GET["country"]);
         }
     } else {
         $data = $st->getGlobal();
-        if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 3600)) {
+        if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 500)) {
             $st->scrape();
             $data = $st->getGlobal();
         }
