@@ -141,10 +141,11 @@ class CoronaStatistic
                 $v = strtolower($v);
                 if (preg_match("/\W{$countryName}\W/", $v)) {
                     if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
+                        var_dump($m);die;
                         $m = $m[1];
                         $cmt = (int)str_replace(",", "", $m[1]);
-                        $fst = (int)str_replace(",", "", $m[4]);
-                        $sdt = (int)str_replace(",", "", $m[6]);
+                        $fst = (int)str_replace(",", "", $m[3]);
+                        $sdt = (int)str_replace(",", "", $m[5]);
                         $tm = strtotime(gmdate("Y-m-d H:i:s"));
                         break;
                     }
