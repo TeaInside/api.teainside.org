@@ -30,7 +30,11 @@ while (true) {
         if (!is_array($oldData)) {
             $oldData = [];
         }
+
         $data = array_diff($data, $oldData);
+        if (count($data) === 0) {
+            goto skip;
+        }
 
         $text = "[Coronavirus Update (for Indonesia)]\n";
         foreach ($data as $k => $v) {
@@ -61,5 +65,6 @@ while (true) {
         echo "No changes!\n";
     }
 
+    skip:
     sleep(60);
 }
