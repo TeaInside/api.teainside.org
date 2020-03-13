@@ -143,8 +143,8 @@ class CoronaStatistic
                     if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
                         $m = $m[1];
                         $cmt = (int)str_replace(",", "", $m[1]);
-                        $fst = (int)str_replace(",", "", $m[4]);
-                        $sdt = (int)str_replace(",", "", $m[6]);
+                        $fst = (int)str_replace(",", "", $m[3]);
+                        $sdt = (int)str_replace(",", "", $m[5]);
                         $tm = strtotime(gmdate("Y-m-d H:i:s"));
                         break;
                     }
