@@ -141,7 +141,6 @@ class CoronaStatistic
                 $v = strtolower($v);
                 if (preg_match("/\W{$countryName}\W/", $v)) {
                     if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
-                        var_dump($m);die;
                         $m = $m[1];
                         $cmt = (int)str_replace(",", "", $m[1]);
                         $fst = (int)str_replace(",", "", $m[3]);

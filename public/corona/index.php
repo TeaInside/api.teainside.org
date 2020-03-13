@@ -14,7 +14,7 @@ if (isset($_GET["all"])) {
         $data = $st->getAllCountry();
     }
 } else {
-    if (isset($_GET["country"])) {
+    if (isset($_GET["country"]) && is_string($_GET["country"])) {
         $data = $st->getCountry($_GET["country"]);
         if ((!isset($data["scraped_at"])) || (abs($now - $data["scraped_at"]) > 3600)) {
             $st->scrape();
