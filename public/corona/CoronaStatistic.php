@@ -210,29 +210,45 @@ class CoronaStatistic
         $country = preg_quote($country);
         $data = [];
 
+        $intPattern = 
+            // "/(\d)\snew\s(\w+)\sin\s{$country}.+<a href=\"(.+)\".+>source<\/a>/USi",
+            "/<li><strong>(.{10,50})\sin\s{$country}<\/strong>.+<a href=\"(.+)\".+>source<\/a>/USi";
+
+        $closure = function ($mm) use (&$data, $intPattern) {
+            foreach ($mm[3] as $kk => $vv) {
+                if (preg_match_all(
+                    $intPattern,
+                    $vv,
+                    $m
+                )) {
+                    foreach ($m[1] as $k => $v) {
+
+                        if (preg_match_all("/(\d+)\snew\s(\w+)/", $m[1][$k], $mx)) {
+                            $r = "";
+                            foreach ($mx[1] as $ki => $vi) {
+                                $r .= " {$vi} new {$mx[2][$ki]} and";
+                            }
+                            $r = trim(rtrim($r, "and"));
+                        }
+
+                        $rd = [
+                            "date" => $mm[1][$kk]." ".$mm[2][$kk],
+                            "info" => $r,
+                            "source" => html_entity_decode(trim($m[2][$k]), ENT_QUOTES, "UTF-8"),
+                        ];
+                        $data[md5($rd["source"])] = $rd;
+                    }
+                }        
+            }
+        };
+
+
         if (preg_match_all(
             "/<h4>(\w+)\s(\d+)(?:\s\(GMT\))?:(?:<br>)?<\/h4>.*<ul>(.+)window\.adsbygoogle/Usi",
             $this->o,
             $mm
         )) {
-            foreach ($mm[3] as $kk => $vv) {
-                if (preg_match_all(
-                    "/(\d)\snew\s(\w+)\sin\s{$country}.+<a href=\"(.+)\".+>source<\/a>/USi",
-                    $vv,
-                    $m
-                )) {
-                    
-                    foreach ($m[1] as $k => $v) {
-                        $r = [
-                            "date" => $mm[1][$kk]." ".$mm[2][$kk],
-                            "type" => trim($m[2][$k]),
-                            "amount" => (int)$v,
-                            "source" => html_entity_decode($m[3][$k], ENT_QUOTES, "UTF-8"),
-                        ];
-                        $data[$r["source"]] = $r;
-                    }
-                }        
-            }
+            $closure($mm);
         }
 
         if (preg_match_all(
@@ -240,25 +256,9 @@ class CoronaStatistic
             $this->o,
             $mm
         )) {
-            foreach ($mm[3] as $kk => $vv) {
-                if (preg_match_all(
-                    "/(\d)\snew\s(\w+)\sin\s{$country}.+<a href=\"(.+)\".+>source<\/a>/USi",
-                    $vv,
-                    $m
-                )) {
-                    foreach ($m[1] as $k => $v) {
-                        $r = [
-                            "date" => $mm[1][$kk]." ".$mm[2][$kk],
-                            "type" => trim($m[2][$k]),
-                            "amount" => (int)$v,
-                            "source" => html_entity_decode($m[3][$k], ENT_QUOTES, "UTF-8")
-                        ];
-                        $data[$r["source"]] = $r;
-                    }
-                }
-            }
+            $closure($mm);
         }
 
-        return array_values($data);
+        return $data;
     }
 }
