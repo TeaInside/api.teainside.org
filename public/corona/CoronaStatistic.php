@@ -140,6 +140,7 @@ class CoronaStatistic
             foreach ($c as $k => $v) {
                 $v = strtolower($v);
                 if (preg_match("/\W{$countryName}\W/", $v)) {
+                    $v = preg_replace("/<!--.+-->/US", "", $v);
                     if (preg_match_all("/<td[^\<\>]+>(.*)<\/td>/Usi", $v, $m)) {
                         $m = $m[1];
                         $cmt = (int)str_replace(",", "", $m[1]);
