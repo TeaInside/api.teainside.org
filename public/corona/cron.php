@@ -7,9 +7,10 @@ require __DIR__."/CoronaStatistic.php";
 $token = "448907482:AAH4CzKcZcoTWAMBxnLCah1eROlYprqfskM";
 $listChatId = [
     -1001128970273, // Private Cloud
-    // -1001377289579, // /\
-    // -1001120283944,
-    // -1001162202776
+    -1001377289579, // /\
+    -1001120283944,
+    -1001162202776,
+    -1001076005465, // Scrape ID
 ];
 
 while (true) {
