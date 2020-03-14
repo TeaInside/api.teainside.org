@@ -15,7 +15,7 @@ $listChatId = [
 while (true) {
     echo "Checking corona...\n";
     $st = new CoronaStatistic;
-    // $st->scrape();
+    $st->scrape();
     $now = strtotime(gmdate("Y-m-d H:i:s"));
     echo "Scraped!\n";
 
