@@ -216,11 +216,7 @@ class CoronaStatistic
 
         $closure = function ($mm) use (&$data, $intPattern) {
             foreach ($mm[3] as $kk => $vv) {
-                if (preg_match_all(
-                    $intPattern,
-                    $vv,
-                    $m
-                )) {
+                if (preg_match_all($intPattern, $vv, $m)) {
                     foreach ($m[1] as $k => $v) {
 
                         if (preg_match_all("/(\d+)\snew\s(\w+)/", $m[1][$k], $mx)) {
@@ -245,17 +241,13 @@ class CoronaStatistic
 
         if (preg_match_all(
             "/<h4>(\w+)\s(\d+)(?:\s\(GMT\))?:(?:<br>)?<\/h4>.*<ul>(.+)window\.adsbygoogle/Usi",
-            $this->o,
-            $mm
-        )) {
+            $this->o, $mm)) {
             $closure($mm);
         }
 
         if (preg_match_all(
             "/<h4>(\w+)\s(\d+)(?:\s\(GMT\))?:(?:<br>)?<\/h4>.*<ul>(.+)<\/ul>/Usi",
-            $this->o,
-            $mm
-        )) {
+            $this->o, $mm)) {
             $closure($mm);
         }
 
