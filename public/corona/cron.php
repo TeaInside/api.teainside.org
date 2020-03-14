@@ -1,5 +1,10 @@
 <?php
 
+if (PHP_SAPI !== "cli") {
+    echo "Must be run in CLI!\n";
+    exit;
+}
+
 define("CORONA_STATS_STORAGE", __DIR__."/data");
 
 require __DIR__."/CoronaStatistic.php";
