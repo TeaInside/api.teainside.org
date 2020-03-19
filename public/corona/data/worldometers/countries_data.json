@@ -1,0 +1,1604 @@
+{
+    "china": {
+        "scope": "country:china",
+        "cmt": 80928,
+        "fst": 3245,
+        "sdt": 70420,
+        "new_cmt": 34,
+        "new_fst": 8,
+        "active_cmt": 7263
+    },
+    "italy": {
+        "scope": "country:italy",
+        "cmt": 35713,
+        "fst": 2978,
+        "sdt": 4025,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 28710
+    },
+    "iran": {
+        "scope": "country:iran",
+        "cmt": 18407,
+        "fst": 1284,
+        "sdt": 5979,
+        "new_cmt": 1046,
+        "new_fst": 149,
+        "active_cmt": 11144
+    },
+    "spain": {
+        "scope": "country:spain",
+        "cmt": 17395,
+        "fst": 803,
+        "sdt": 1107,
+        "new_cmt": 2626,
+        "new_fst": 165,
+        "active_cmt": 15485
+    },
+    "germany": {
+        "scope": "country:germany",
+        "cmt": 14366,
+        "fst": 43,
+        "sdt": 113,
+        "new_cmt": 2039,
+        "new_fst": 15,
+        "active_cmt": 14210
+    },
+    "usa": {
+        "scope": "country:usa",
+        "cmt": 10816,
+        "fst": 161,
+        "sdt": 108,
+        "new_cmt": 1557,
+        "new_fst": 11,
+        "active_cmt": 10547
+    },
+    "france": {
+        "scope": "country:france",
+        "cmt": 9134,
+        "fst": 264,
+        "sdt": 602,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 8268
+    },
+    "s. korea": {
+        "scope": "country:s. korea",
+        "cmt": 8565,
+        "fst": 91,
+        "sdt": 1947,
+        "new_cmt": 152,
+        "new_fst": 7,
+        "active_cmt": 6527
+    },
+    "switzerland": {
+        "scope": "country:switzerland",
+        "cmt": 3939,
+        "fst": 36,
+        "sdt": 15,
+        "new_cmt": 824,
+        "new_fst": 3,
+        "active_cmt": 3888
+    },
+    "uk": {
+        "scope": "country:uk",
+        "cmt": 2692,
+        "fst": 137,
+        "sdt": 65,
+        "new_cmt": 66,
+        "new_fst": 33,
+        "active_cmt": 2490
+    },
+    "netherlands": {
+        "scope": "country:netherlands",
+        "cmt": 2460,
+        "fst": 76,
+        "sdt": 2,
+        "new_cmt": 409,
+        "new_fst": 18,
+        "active_cmt": 2382
+    },
+    "austria": {
+        "scope": "country:austria",
+        "cmt": 2013,
+        "fst": 6,
+        "sdt": 9,
+        "new_cmt": 367,
+        "new_fst": 2,
+        "active_cmt": 1998
+    },
+    "belgium": {
+        "scope": "country:belgium",
+        "cmt": 1795,
+        "fst": 21,
+        "sdt": 165,
+        "new_cmt": 309,
+        "new_fst": 7,
+        "active_cmt": 1609
+    },
+    "norway": {
+        "scope": "country:norway",
+        "cmt": 1746,
+        "fst": 7,
+        "sdt": 1,
+        "new_cmt": 155,
+        "new_fst": 1,
+        "active_cmt": 1738
+    },
+    "sweden": {
+        "scope": "country:sweden",
+        "cmt": 1439,
+        "fst": 11,
+        "sdt": 16,
+        "new_cmt": 138,
+        "new_fst": 1,
+        "active_cmt": 1412
+    },
+    "denmark": {
+        "scope": "country:denmark",
+        "cmt": 1151,
+        "fst": 6,
+        "sdt": 1,
+        "new_cmt": 94,
+        "new_fst": 2,
+        "active_cmt": 1144
+    },
+    "japan": {
+        "scope": "country:japan",
+        "cmt": 923,
+        "fst": 32,
+        "sdt": 191,
+        "new_cmt": 9,
+        "new_fst": 3,
+        "active_cmt": 700
+    },
+    "malaysia": {
+        "scope": "country:malaysia",
+        "cmt": 900,
+        "fst": 2,
+        "sdt": 75,
+        "new_cmt": 110,
+        "new_fst": 0,
+        "active_cmt": 823
+    },
+    "portugal": {
+        "scope": "country:portugal",
+        "cmt": 785,
+        "fst": 3,
+        "sdt": 4,
+        "new_cmt": 143,
+        "new_fst": 1,
+        "active_cmt": 778
+    },
+    "canada": {
+        "scope": "country:canada",
+        "cmt": 770,
+        "fst": 9,
+        "sdt": 12,
+        "new_cmt": 43,
+        "new_fst": 0,
+        "active_cmt": 749
+    },
+    "diamond princess": {
+        "scope": "country:diamond princess",
+        "cmt": 712,
+        "fst": 7,
+        "sdt": 527,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 178
+    },
+    "australia": {
+        "scope": "country:australia",
+        "cmt": 709,
+        "fst": 6,
+        "sdt": 46,
+        "new_cmt": 113,
+        "new_fst": 0,
+        "active_cmt": 657
+    },
+    "czechia": {
+        "scope": "country:czechia",
+        "cmt": 631,
+        "fst": 0,
+        "sdt": 3,
+        "new_cmt": 109,
+        "new_fst": 0,
+        "active_cmt": 628
+    },
+    "brazil": {
+        "scope": "country:brazil",
+        "cmt": 534,
+        "fst": 6,
+        "sdt": 2,
+        "new_cmt": 5,
+        "new_fst": 2,
+        "active_cmt": 526
+    },
+    "israel": {
+        "scope": "country:israel",
+        "cmt": 529,
+        "fst": 0,
+        "sdt": 13,
+        "new_cmt": 96,
+        "new_fst": 0,
+        "active_cmt": 516
+    },
+    "qatar": {
+        "scope": "country:qatar",
+        "cmt": 452,
+        "fst": 0,
+        "sdt": 4,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 448
+    },
+    "greece": {
+        "scope": "country:greece",
+        "cmt": 418,
+        "fst": 6,
+        "sdt": 14,
+        "new_cmt": 0,
+        "new_fst": 1,
+        "active_cmt": 398
+    },
+    "finland": {
+        "scope": "country:finland",
+        "cmt": 400,
+        "fst": 0,
+        "sdt": 10,
+        "new_cmt": 41,
+        "new_fst": 0,
+        "active_cmt": 390
+    },
+    "pakistan": {
+        "scope": "country:pakistan",
+        "cmt": 384,
+        "fst": 2,
+        "sdt": 13,
+        "new_cmt": 77,
+        "new_fst": 0,
+        "active_cmt": 369
+    },
+    "ireland": {
+        "scope": "country:ireland",
+        "cmt": 366,
+        "fst": 2,
+        "sdt": 5,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 359
+    },
+    "singapore": {
+        "scope": "country:singapore",
+        "cmt": 345,
+        "fst": 0,
+        "sdt": 124,
+        "new_cmt": 32,
+        "new_fst": 0,
+        "active_cmt": 221
+    },
+    "chile": {
+        "scope": "country:chile",
+        "cmt": 342,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 104,
+        "new_fst": 0,
+        "active_cmt": 342
+    },
+    "luxembourg": {
+        "scope": "country:luxembourg",
+        "cmt": 335,
+        "fst": 4,
+        "sdt": 0,
+        "new_cmt": 132,
+        "new_fst": 2,
+        "active_cmt": 331
+    },
+    "iceland": {
+        "scope": "country:iceland",
+        "cmt": 330,
+        "fst": 0,
+        "sdt": 5,
+        "new_cmt": 80,
+        "new_fst": 0,
+        "active_cmt": 325
+    },
+    "poland": {
+        "scope": "country:poland",
+        "cmt": 325,
+        "fst": 5,
+        "sdt": 13,
+        "new_cmt": 38,
+        "new_fst": 0,
+        "active_cmt": 307
+    },
+    "slovenia": {
+        "scope": "country:slovenia",
+        "cmt": 319,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 33,
+        "new_fst": 0,
+        "active_cmt": 318
+    },
+    "indonesia": {
+        "scope": "country:indonesia",
+        "cmt": 309,
+        "fst": 25,
+        "sdt": 15,
+        "new_cmt": 82,
+        "new_fst": 6,
+        "active_cmt": 269
+    },
+    "bahrain": {
+        "scope": "country:bahrain",
+        "cmt": 277,
+        "fst": 1,
+        "sdt": 100,
+        "new_cmt": 21,
+        "new_fst": 0,
+        "active_cmt": 176
+    },
+    "romania": {
+        "scope": "country:romania",
+        "cmt": 277,
+        "fst": 0,
+        "sdt": 25,
+        "new_cmt": 17,
+        "new_fst": 0,
+        "active_cmt": 252
+    },
+    "thailand": {
+        "scope": "country:thailand",
+        "cmt": 272,
+        "fst": 1,
+        "sdt": 42,
+        "new_cmt": 60,
+        "new_fst": 0,
+        "active_cmt": 229
+    },
+    "estonia": {
+        "scope": "country:estonia",
+        "cmt": 267,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 9,
+        "new_fst": 0,
+        "active_cmt": 266
+    },
+    "saudi arabia": {
+        "scope": "country:saudi arabia",
+        "cmt": 238,
+        "fst": 0,
+        "sdt": 8,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 230
+    },
+    "philippines": {
+        "scope": "country:philippines",
+        "cmt": 217,
+        "fst": 17,
+        "sdt": 8,
+        "new_cmt": 15,
+        "new_fst": 0,
+        "active_cmt": 192
+    },
+    "egypt": {
+        "scope": "country:egypt",
+        "cmt": 210,
+        "fst": 6,
+        "sdt": 28,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 176
+    },
+    "hong kong": {
+        "scope": "country:hong kong",
+        "cmt": 208,
+        "fst": 4,
+        "sdt": 98,
+        "new_cmt": 15,
+        "new_fst": 0,
+        "active_cmt": 106
+    },
+    "ecuador": {
+        "scope": "country:ecuador",
+        "cmt": 199,
+        "fst": 3,
+        "sdt": 1,
+        "new_cmt": 31,
+        "new_fst": 0,
+        "active_cmt": 195
+    },
+    "russia": {
+        "scope": "country:russia",
+        "cmt": 199,
+        "fst": 1,
+        "sdt": 8,
+        "new_cmt": 52,
+        "new_fst": 1,
+        "active_cmt": 190
+    },
+    "india": {
+        "scope": "country:india",
+        "cmt": 197,
+        "fst": 4,
+        "sdt": 20,
+        "new_cmt": 28,
+        "new_fst": 1,
+        "active_cmt": 173
+    },
+    "turkey": {
+        "scope": "country:turkey",
+        "cmt": 192,
+        "fst": 3,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 1,
+        "active_cmt": 189
+    },
+    "iraq": {
+        "scope": "country:iraq",
+        "cmt": 177,
+        "fst": 12,
+        "sdt": 49,
+        "new_cmt": 13,
+        "new_fst": 0,
+        "active_cmt": 116
+    },
+    "peru": {
+        "scope": "country:peru",
+        "cmt": 155,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 10,
+        "new_fst": 0,
+        "active_cmt": 154
+    },
+    "south africa": {
+        "scope": "country:south africa",
+        "cmt": 150,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 34,
+        "new_fst": 0,
+        "active_cmt": 150
+    },
+    "lebanon": {
+        "scope": "country:lebanon",
+        "cmt": 149,
+        "fst": 4,
+        "sdt": 4,
+        "new_cmt": 16,
+        "new_fst": 0,
+        "active_cmt": 141
+    },
+    "kuwait": {
+        "scope": "country:kuwait",
+        "cmt": 148,
+        "fst": 0,
+        "sdt": 18,
+        "new_cmt": 6,
+        "new_fst": 0,
+        "active_cmt": 130
+    },
+    "san marino": {
+        "scope": "country:san marino",
+        "cmt": 140,
+        "fst": 14,
+        "sdt": 4,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 122
+    },
+    "uae": {
+        "scope": "country:uae",
+        "cmt": 140,
+        "fst": 0,
+        "sdt": 31,
+        "new_cmt": 27,
+        "new_fst": 0,
+        "active_cmt": 109
+    },
+    "slovakia": {
+        "scope": "country:slovakia",
+        "cmt": 124,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 19,
+        "new_fst": 0,
+        "active_cmt": 124
+    },
+    "armenia": {
+        "scope": "country:armenia",
+        "cmt": 122,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 12,
+        "new_fst": 0,
+        "active_cmt": 121
+    },
+    "mexico": {
+        "scope": "country:mexico",
+        "cmt": 118,
+        "fst": 1,
+        "sdt": 4,
+        "new_cmt": 25,
+        "new_fst": 1,
+        "active_cmt": 113
+    },
+    "panama": {
+        "scope": "country:panama",
+        "cmt": 109,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 108
+    },
+    "taiwan": {
+        "scope": "country:taiwan",
+        "cmt": 108,
+        "fst": 1,
+        "sdt": 26,
+        "new_cmt": 8,
+        "new_fst": 0,
+        "active_cmt": 81
+    },
+    "bulgaria": {
+        "scope": "country:bulgaria",
+        "cmt": 105,
+        "fst": 3,
+        "sdt": 0,
+        "new_cmt": 13,
+        "new_fst": 1,
+        "active_cmt": 102
+    },
+    "croatia": {
+        "scope": "country:croatia",
+        "cmt": 105,
+        "fst": 1,
+        "sdt": 5,
+        "new_cmt": 16,
+        "new_fst": 1,
+        "active_cmt": 99
+    },
+    "colombia": {
+        "scope": "country:colombia",
+        "cmt": 102,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 9,
+        "new_fst": 0,
+        "active_cmt": 101
+    },
+    "argentina": {
+        "scope": "country:argentina",
+        "cmt": 97,
+        "fst": 3,
+        "sdt": 3,
+        "new_cmt": 0,
+        "new_fst": 1,
+        "active_cmt": 91
+    },
+    "serbia": {
+        "scope": "country:serbia",
+        "cmt": 97,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 8,
+        "new_fst": 0,
+        "active_cmt": 96
+    },
+    "algeria": {
+        "scope": "country:algeria",
+        "cmt": 87,
+        "fst": 9,
+        "sdt": 32,
+        "new_cmt": 12,
+        "new_fst": 2,
+        "active_cmt": 46
+    },
+    "latvia": {
+        "scope": "country:latvia",
+        "cmt": 86,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 15,
+        "new_fst": 0,
+        "active_cmt": 85
+    },
+    "uruguay": {
+        "scope": "country:uruguay",
+        "cmt": 79,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 79
+    },
+    "vietnam": {
+        "scope": "country:vietnam",
+        "cmt": 76,
+        "fst": 0,
+        "sdt": 16,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 60
+    },
+    "hungary": {
+        "scope": "country:hungary",
+        "cmt": 73,
+        "fst": 1,
+        "sdt": 2,
+        "new_cmt": 15,
+        "new_fst": 0,
+        "active_cmt": 70
+    },
+    "brunei": {
+        "scope": "country:brunei",
+        "cmt": 73,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 5,
+        "new_fst": 0,
+        "active_cmt": 73
+    },
+    "faeroe islands": {
+        "scope": "country:faeroe islands",
+        "cmt": 72,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 14,
+        "new_fst": 0,
+        "active_cmt": 71
+    },
+    "costa rica": {
+        "scope": "country:costa rica",
+        "cmt": 69,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 68
+    },
+    "albania": {
+        "scope": "country:albania",
+        "cmt": 64,
+        "fst": 2,
+        "sdt": 0,
+        "new_cmt": 5,
+        "new_fst": 0,
+        "active_cmt": 62
+    },
+    "morocco": {
+        "scope": "country:morocco",
+        "cmt": 61,
+        "fst": 2,
+        "sdt": 2,
+        "new_cmt": 7,
+        "new_fst": 0,
+        "active_cmt": 57
+    },
+    "sri lanka": {
+        "scope": "country:sri lanka",
+        "cmt": 60,
+        "fst": 0,
+        "sdt": 3,
+        "new_cmt": 9,
+        "new_fst": 0,
+        "active_cmt": 57
+    },
+    "cyprus": {
+        "scope": "country:cyprus",
+        "cmt": 58,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 58
+    },
+    "jordan": {
+        "scope": "country:jordan",
+        "cmt": 56,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 55
+    },
+    "andorra": {
+        "scope": "country:andorra",
+        "cmt": 53,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 52
+    },
+    "malta": {
+        "scope": "country:malta",
+        "cmt": 53,
+        "fst": 0,
+        "sdt": 2,
+        "new_cmt": 5,
+        "new_fst": 0,
+        "active_cmt": 51
+    },
+    "belarus": {
+        "scope": "country:belarus",
+        "cmt": 51,
+        "fst": 0,
+        "sdt": 5,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 46
+    },
+    "moldova": {
+        "scope": "country:moldova",
+        "cmt": 49,
+        "fst": 1,
+        "sdt": 1,
+        "new_cmt": 13,
+        "new_fst": 0,
+        "active_cmt": 47
+    },
+    "north macedonia": {
+        "scope": "country:north macedonia",
+        "cmt": 49,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 6,
+        "new_fst": 0,
+        "active_cmt": 48
+    },
+    "bosnia and herzegovina": {
+        "scope": "country:bosnia and herzegovina",
+        "cmt": 49,
+        "fst": 0,
+        "sdt": 2,
+        "new_cmt": 10,
+        "new_fst": 0,
+        "active_cmt": 47
+    },
+    "palestine": {
+        "scope": "country:palestine",
+        "cmt": 47,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 3,
+        "new_fst": 0,
+        "active_cmt": 47
+    },
+    "azerbaijan": {
+        "scope": "country:azerbaijan",
+        "cmt": 44,
+        "fst": 1,
+        "sdt": 7,
+        "new_cmt": 10,
+        "new_fst": 0,
+        "active_cmt": 36
+    },
+    "kazakhstan": {
+        "scope": "country:kazakhstan",
+        "cmt": 44,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 8,
+        "new_fst": 0,
+        "active_cmt": 44
+    },
+    "georgia": {
+        "scope": "country:georgia",
+        "cmt": 40,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 39
+    },
+    "oman": {
+        "scope": "country:oman",
+        "cmt": 39,
+        "fst": 0,
+        "sdt": 13,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 26
+    },
+    "tunisia": {
+        "scope": "country:tunisia",
+        "cmt": 39,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 10,
+        "new_fst": 0,
+        "active_cmt": 38
+    },
+    "cambodia": {
+        "scope": "country:cambodia",
+        "cmt": 37,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 36
+    },
+    "lithuania": {
+        "scope": "country:lithuania",
+        "cmt": 36,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 35
+    },
+    "senegal": {
+        "scope": "country:senegal",
+        "cmt": 36,
+        "fst": 0,
+        "sdt": 2,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 34
+    },
+    "venezuela": {
+        "scope": "country:venezuela",
+        "cmt": 36,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 36
+    },
+    "dominican republic": {
+        "scope": "country:dominican republic",
+        "cmt": 34,
+        "fst": 2,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 32
+    },
+    "burkina faso": {
+        "scope": "country:burkina faso",
+        "cmt": 33,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 6,
+        "new_fst": 0,
+        "active_cmt": 32
+    },
+    "guadeloupe": {
+        "scope": "country:guadeloupe",
+        "cmt": 33,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 33
+    },
+    "new zealand": {
+        "scope": "country:new zealand",
+        "cmt": 28,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 8,
+        "new_fst": 0,
+        "active_cmt": 28
+    },
+    "liechtenstein": {
+        "scope": "country:liechtenstein",
+        "cmt": 28,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 28
+    },
+    "martinique": {
+        "scope": "country:martinique",
+        "cmt": 23,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 22
+    },
+    "uzbekistan": {
+        "scope": "country:uzbekistan",
+        "cmt": 23,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 5,
+        "new_fst": 0,
+        "active_cmt": 23
+    },
+    "afghanistan": {
+        "scope": "country:afghanistan",
+        "cmt": 22,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 21
+    },
+    "r&eacute;union": {
+        "scope": "country:r&eacute;union",
+        "cmt": 19,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 5,
+        "new_fst": 0,
+        "active_cmt": 19
+    },
+    "ukraine": {
+        "scope": "country:ukraine",
+        "cmt": 18,
+        "fst": 2,
+        "sdt": 0,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 16
+    },
+    "bangladesh": {
+        "scope": "country:bangladesh",
+        "cmt": 18,
+        "fst": 1,
+        "sdt": 3,
+        "new_cmt": 4,
+        "new_fst": 0,
+        "active_cmt": 14
+    },
+    "macao": {
+        "scope": "country:macao",
+        "cmt": 17,
+        "fst": 0,
+        "sdt": 10,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 7
+    },
+    "jamaica": {
+        "scope": "country:jamaica",
+        "cmt": 15,
+        "fst": 1,
+        "sdt": 2,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 12
+    },
+    "bolivia": {
+        "scope": "country:bolivia",
+        "cmt": 15,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 3,
+        "new_fst": 0,
+        "active_cmt": 15
+    },
+    "french guiana": {
+        "scope": "country:french guiana",
+        "cmt": 15,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 15
+    },
+    "drc": {
+        "scope": "country:drc",
+        "cmt": 14,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 7,
+        "new_fst": 0,
+        "active_cmt": 14
+    },
+    "cameroon": {
+        "scope": "country:cameroon",
+        "cmt": 13,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 13
+    },
+    "maldives": {
+        "scope": "country:maldives",
+        "cmt": 13,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 13
+    },
+    "nigeria": {
+        "scope": "country:nigeria",
+        "cmt": 12,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 4,
+        "new_fst": 0,
+        "active_cmt": 11
+    },
+    "guam": {
+        "scope": "country:guam",
+        "cmt": 12,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 4,
+        "new_fst": 0,
+        "active_cmt": 12
+    },
+    "honduras": {
+        "scope": "country:honduras",
+        "cmt": 12,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 3,
+        "new_fst": 0,
+        "active_cmt": 12
+    },
+    "cuba": {
+        "scope": "country:cuba",
+        "cmt": 11,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 10
+    },
+    "ghana": {
+        "scope": "country:ghana",
+        "cmt": 11,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 4,
+        "new_fst": 0,
+        "active_cmt": 11
+    },
+    "paraguay": {
+        "scope": "country:paraguay",
+        "cmt": 11,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 11
+    },
+    "rwanda": {
+        "scope": "country:rwanda",
+        "cmt": 11,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 11
+    },
+    "montenegro": {
+        "scope": "country:montenegro",
+        "cmt": 10,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 10
+    },
+    "guatemala": {
+        "scope": "country:guatemala",
+        "cmt": 9,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 8
+    },
+    "monaco": {
+        "scope": "country:monaco",
+        "cmt": 9,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 9
+    },
+    "ivory coast": {
+        "scope": "country:ivory coast",
+        "cmt": 9,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 8
+    },
+    "trinidad and tobago": {
+        "scope": "country:trinidad and tobago",
+        "cmt": 9,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 9
+    },
+    "gibraltar": {
+        "scope": "country:gibraltar",
+        "cmt": 8,
+        "fst": 0,
+        "sdt": 2,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "channel islands": {
+        "scope": "country:channel islands",
+        "cmt": 7,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 7
+    },
+    "ethiopia": {
+        "scope": "country:ethiopia",
+        "cmt": 7,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 7
+    },
+    "kenya": {
+        "scope": "country:kenya",
+        "cmt": 7,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 7
+    },
+    "french polynesia": {
+        "scope": "country:french polynesia",
+        "cmt": 6,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "mongolia": {
+        "scope": "country:mongolia",
+        "cmt": 6,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "puerto rico": {
+        "scope": "country:puerto rico",
+        "cmt": 6,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "seychelles": {
+        "scope": "country:seychelles",
+        "cmt": 6,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "tanzania": {
+        "scope": "country:tanzania",
+        "cmt": 6,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 3,
+        "new_fst": 0,
+        "active_cmt": 6
+    },
+    "guyana": {
+        "scope": "country:guyana",
+        "cmt": 5,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 4
+    },
+    "aruba": {
+        "scope": "country:aruba",
+        "cmt": 5,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 4
+    },
+    "equatorial guinea": {
+        "scope": "country:equatorial guinea",
+        "cmt": 4,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 4
+    },
+    "cura&ccedil;ao": {
+        "scope": "country:cura&ccedil;ao",
+        "cmt": 3,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 1,
+        "active_cmt": 2
+    },
+    "bahamas": {
+        "scope": "country:bahamas",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 2,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "gabon": {
+        "scope": "country:gabon",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "kyrgyzstan": {
+        "scope": "country:kyrgyzstan",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "mauritius": {
+        "scope": "country:mauritius",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "mayotte": {
+        "scope": "country:mayotte",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "st. barth": {
+        "scope": "country:st. barth",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "saint martin": {
+        "scope": "country:saint martin",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "u.s. virgin islands": {
+        "scope": "country:u.s. virgin islands",
+        "cmt": 3,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 3
+    },
+    "sudan": {
+        "scope": "country:sudan",
+        "cmt": 2,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "barbados": {
+        "scope": "country:barbados",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "benin": {
+        "scope": "country:benin",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "bermuda": {
+        "scope": "country:bermuda",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "greenland": {
+        "scope": "country:greenland",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "liberia": {
+        "scope": "country:liberia",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "mauritania": {
+        "scope": "country:mauritania",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "namibia": {
+        "scope": "country:namibia",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "new caledonia": {
+        "scope": "country:new caledonia",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "saint lucia": {
+        "scope": "country:saint lucia",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "zambia": {
+        "scope": "country:zambia",
+        "cmt": 2,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 2
+    },
+    "cayman islands": {
+        "scope": "country:cayman islands",
+        "cmt": 1,
+        "fst": 1,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 0
+    },
+    "nepal": {
+        "scope": "country:nepal",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 1,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 0
+    },
+    "antigua and barbuda": {
+        "scope": "country:antigua and barbuda",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "bhutan": {
+        "scope": "country:bhutan",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "car": {
+        "scope": "country:car",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "chad": {
+        "scope": "country:chad",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "congo": {
+        "scope": "country:congo",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "djibouti": {
+        "scope": "country:djibouti",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "el salvador": {
+        "scope": "country:el salvador",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "fiji": {
+        "scope": "country:fiji",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "gambia": {
+        "scope": "country:gambia",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "guinea": {
+        "scope": "country:guinea",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "vatican city": {
+        "scope": "country:vatican city",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "montserrat": {
+        "scope": "country:montserrat",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "nicaragua": {
+        "scope": "country:nicaragua",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 1,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "st. vincent grenadines": {
+        "scope": "country:st. vincent grenadines",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "sint maarten": {
+        "scope": "country:sint maarten",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "somalia": {
+        "scope": "country:somalia",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "suriname": {
+        "scope": "country:suriname",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "eswatini": {
+        "scope": "country:eswatini",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    },
+    "togo": {
+        "scope": "country:togo",
+        "cmt": 1,
+        "fst": 0,
+        "sdt": 0,
+        "new_cmt": 0,
+        "new_fst": 0,
+        "active_cmt": 1
+    }
+}
