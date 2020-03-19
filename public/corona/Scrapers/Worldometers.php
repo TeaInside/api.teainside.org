@@ -267,7 +267,7 @@ final class Worldometers extends BaseScraper
   {
     $this->scrape();
     return [
-      "data" => $this->countriesData,
+      "data" => array_values($this->countriesData),
       "scraped_at" => $this->lastScrape
     ];
   }
