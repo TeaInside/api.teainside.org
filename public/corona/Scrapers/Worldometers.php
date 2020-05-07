@@ -64,6 +64,7 @@ final class Worldometers extends BaseScraper
     $this->countriesDataFile = $this->storagePath."/countries_data.json";
     $this->lastScrapeFile = $this->storagePath."/last_scrape.txt";
     $this->oFile = $this->storagePath."/o.html";
+    $this->errorLogFile = $this->storagePath."/error_log.txt";
 
     if (file_exists($this->lastScrapeFile)) {
       $this->lastScrape = (int)file_get_contents($this->lastScrapeFile);
