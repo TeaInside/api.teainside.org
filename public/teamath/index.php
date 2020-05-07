@@ -2,16 +2,7 @@
 <html>
 <head>
   <title>Tea Advanced Calculator</title>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
+  <script>MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},svg: {fontCache: 'global'}};</script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
   <style type="text/css">
     * {
@@ -74,7 +65,7 @@ function d() { return document; }
 function getDom(q) { return d().querySelector(q); }
 function getClass(q) { return d().getElementsByClassName(q); }
 function ctn(text) { return d().createTextNode(text); }
-const api_url = "/teamath/api.php?key=8e7eaa2822cf3bf77a03d63d2fbdeb36df0a409f&q=";
+const api_url = "https://api.teainside.org/teamath/api.php?key=8e7eaa2822cf3bf77a03d63d2fbdeb36df0a409f&q=";
 
 let promise = Promise.resolve();
 function typeset(code) {
@@ -108,7 +99,6 @@ function toggle_step(et, id) {
     }
   }
   if (compile) {
-    console.log((new Date())+" compiling...");
     typeset(function () {});
   }
 }
@@ -124,6 +114,8 @@ getDom("#fr").addEventListener("submit", function () {
     intext = input.value.trim(),
     hsl_val = 0,
     keywords = getDom("#keywords");
+
+  if (input == "") return;
 
   calculating.style.display = "";
   submit_button.disabled = input.disabled = 1;
@@ -242,7 +234,6 @@ getDom("#fr").addEventListener("submit", function () {
   ch.open("GET", api_url+encodeURIComponent(intext));
   ch.send();
 });
-
 </script>
 </body>
 </html>
