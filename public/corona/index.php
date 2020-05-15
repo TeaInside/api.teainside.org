@@ -7,7 +7,7 @@ use CoronaStatistic\CoronaStatistic;
 $st = new CoronaStatistic;
 $wm = $st->worldometers();
 if (isset($_GET["country"])) {
-    $data = $wm->getCountryData(is_array($_GET["country"]) ? $_GET["country"] : [$_GET["country"]]);
+    $data = $wm->getCountryData($_GET["country"]);
 } else if (isset($_GET["all"])) {
     $data = $wm->getAllCountriesData();
 } else {
