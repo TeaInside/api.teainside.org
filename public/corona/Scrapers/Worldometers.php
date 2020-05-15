@@ -188,20 +188,31 @@ final class Worldometers extends BaseScraper
     }
 
     $c = explode('<tbody>', $c[0], 2);
+    $c = explode('data-continent="all"', $c[1], 2);
+
+    $re = function ($str) {
+      $str = strip_tags(trim($str));
+
+      if ($str === "N/A") {
+        return "N/A";
+      }
+      return (int)str_replace(",", "", $str);
+    };
+
     if (count($c) > 0) {
-      if (preg_match_all("/<tr.*>(.+)<\/tr>/Usi", $c[1], $m)) {
-        foreach ($m[1] as $k => $v) {
-          if (preg_match_all("/<td[^\<\>]*>(.*)<\/td>/Usi", $v, $m)) {
-            $m = $m[1];
-            $country = strtolower(trim(strip_tags($m[0])));
+      if (preg_match_all("/<tr.*>.*<td.*>(\d{1,4})<\/td>.*<td.*><a.*href=\"country.*\">(.+)<\/a>(.+)<\/tr>/Usi", $c[1], $m)) {
+        foreach ($m[3] as $k => $v) {
+          $country = strtolower(trim(strip_tags($m[2][$k])));
+          if (preg_match_all("/<td.*>(.*)<\/td>/Usi", $v, $mm)) {
             $data[$country] = [
               "scope" => "country:{$country}",
-              "cmt" => (int)str_replace(",", "", $m[1]),
-              "fst" => (int)str_replace(",", "", $m[3]),
-              "sdt" => (int)str_replace(",", "", $m[5]),
-              "new_cmt" => (int)str_replace(",", "", $m[2]),
-              "new_fst" => (int)str_replace(",", "", $m[4]),
-              "active_cmt" => (int)str_replace(",", "", $m[6])
+              "cmt" => $re($mm[1][0]),
+              "new_cmt" => $re($mm[1][1]),
+              "fst" => $re($mm[1][2]),
+              "new_fst" => $re($mm[1][3]),
+              "sdt" => $re($mm[1][4]),
+              "active_cmt" => $re($mm[1][5]),
+              "total_test" => $re($mm[1][9]),
             ];
           }
         }
